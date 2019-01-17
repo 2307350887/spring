@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /api
+  tomcat:
+    max-threads: 1000
+    min-spare-threads: 50
+  connection-timeout: 5000
+spring:
+  profiles:
+    active: dev
+  http:
+
+  servlet:
+    multipart:
+      max-file-size: -1
+appKey: 1
+appSecret: 1
+bucket: lynn
+endPoint: https://www.aliyun.com
